@@ -1,0 +1,55 @@
+// EXPERIMENT 3 - Problem 2
+//Create a C++ Program that store temperature of Province A, Province B and Province C for a week (seven days) and display it. 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num[7];
+    
+    
+     cout<<"What is the temperature of 'Province A' for each given day: "<<endl;
+    
+    for (int counter = 0; counter < 7; counter ++)
+    
+        {
+            cout<<counter+1<<") "; cin>>num[counter];
+        }
+     
+     cout<<endl;
+    
+     int man[7];
+    cout<<"What is the temperature of 'Province B' for each given day: "<<endl;
+    
+    for (int counter = 0; counter < 7; counter ++)
+    
+        {
+            cout<<counter+1<<") "; cin>>man[counter];
+        }
+        
+    cout<<endl;
+    
+     int ham[7];   
+    cout<<"What is the temperature of 'Province C' for each given day: " <<endl;
+    cout<<endl;
+        
+    for (int counter = 0; counter < 7; counter ++)
+        {
+
+            cout<<counter+1<<") "; cin>>ham[counter];
+        }
+        
+    cout<<endl;
+    
+    cout<<"Province A temperature for seven days: "<<endl;
+    cout<<"Day 1: "<<num[0]<<endl<<"Day 2: "<<num[1]<<endl<<"Day 3: "<<num[2]<<endl<<"Day 4: "<<num[3]<<endl<<"Day 5: "<<num[4]<<endl<<"Day 6: "<<num[5]<<endl<<"Day 7: "<<num[6]<<endl<<endl;
+    cout<<"Province B temperature for seven days: "<<endl;
+    cout<<"Day 1: "<<man[0]<<endl<<"Day 2: "<<man[1]<<endl<<"Day 3: "<<man[2]<<endl<<"Day 4: "<<man[3]<<endl<<"Day 5: "<<man[4]<<endl<<"Day 6: "<<man[5]<<endl<<"Day 7: "<<man[6]<<endl<<endl;
+    cout<<"Province C temperature for seven days: "<<endl;
+    cout<<"Day 1: "<<ham[0]<<endl<<"Day 2: "<<ham[1]<<endl<<"Day 3: "<<ham[2]<<endl<<"Day 4: "<<ham[3]<<endl<<"Day 5: "<<ham[4]<<endl<<"Day 6: "<<ham[5]<<endl<<"Day 7: "<<ham[6]<<endl<<endl;
+    
+    
+    return 0;
+    }
