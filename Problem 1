@@ -1,0 +1,51 @@
+//EXPERIMENT 3 - Problem 1
+//Create a C++ program to show the smallest and largest integer, the total, and the average of an array that take 10 elements only.
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    double size[10];
+    int num, max, min;
+    double sum, average, largest, smallest;
+    
+    cout<<"Input 10 integers: "<<endl;
+    
+        for (num = 0; num < 10; num++)
+        size[num] = 0.0;
+    
+        for (num = 0; num < 10; num++)
+        cin >> size[num];
+    
+        for (num = 0; num < 10; num++)
+        cout << size[num] << " ";
+    
+    cout<<endl;
+    
+    sum = 0;
+        for (num = 0; num < 10; num++)
+        sum = sum + size[num];
+    
+    average = sum / 10;
+        cout<<"The 'Sum' of the 10 integers is: "<<sum<<endl;
+        cout<<"The 'Average' of the 10 integers is: "<<average<<endl;
+    
+    min = 0;
+        for (num = 1; num < 10; num++)
+        if (size[min] > size[num])
+            min = num;
+    
+    smallest = size[min];
+        cout<<"The 'Smallest' number is: "<<smallest<<endl;
+    
+    max = 0;
+    for (num = 1; num < 10; num++)
+        if (size[max] < size[num])
+            max = num;
+    
+    largest = size[max];
+    cout<<"The 'Largest' number is: "<<largest<<endl;
+    
+    return 0;
+}
